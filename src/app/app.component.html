@@ -1,5 +1,3 @@
-<h1>App Component</h1>
-<app-server></app-server>
-<app-green></app-green>
-<app-red></app-red>
-<app-yellow></app-yellow>
+<p>Server {{ ServerName }} with Pid {{ ServerPid }} is {{ ServerStatus }}</p>
+
+<button [disabled]= "buttonState" (click)="toggleServerStatus()">Toggle Server status</button>
